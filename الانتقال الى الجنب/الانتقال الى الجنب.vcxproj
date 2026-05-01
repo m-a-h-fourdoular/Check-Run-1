@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9680800d-9a42-4553-a74c-a7a6b775a4ca}</ProjectGuid>
+    <RootNamespace>الانتقالالىالجنب</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>Check..Run!</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>mfplat.lib;mfreadwrite.lib;mfuuid.lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="الانتقال الى الجنب.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="الانتقال الى الجنب.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="الانتقال الى الجنب.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\Pictures\Screenshots\Screenshot 2026-04-21 124821 - Copy (2).png" />
+    <Image Include="..\..\..\..\..\images\back.pmb.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\are you sure aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\botton_you_will_lose_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\box_you_will_lose_aaaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\english_aaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\no_back_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\yes_i_am_sure_aaaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\اعاده ضبط_aaaaaaaaaaaaaaaaaaaaaaaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\الشعار_aaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\العلامات_زائد_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\العلامات_ناقص_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\اللغه_aaaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\تاج_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\زر_سيتم_فقدان_كل_تقدمك_aaaaaaaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\مربع حوار سيتم ضياع تقدمك_aaaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\bottons\هل انت متاكد aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\Check..Run!.ico" />
+    <Image Include="..\..\..\..\..\images\exit_aaa.bmp" />
+    <Image Include="..\..\..\..\..\images\exit_ar_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\hart1.bmp" />
+    <Image Include="..\..\..\..\..\images\setting.bmp" />
+    <Image Include="..\..\..\..\..\images\setting_ar_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\start.bmp" />
+    <Image Include="..\..\..\..\..\images\start_ar_aaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\زائد.pmb.bmp" />
+    <Image Include="..\..\..\..\..\images\لا_ارجع_aaaaaaaa.bmp" />
+    <Image Include="..\..\..\..\..\images\ناقص .pmb.bmp" />
+    <Image Include="..\..\..\..\..\images\نعم_متاكد_aaaaaa.bmp" />
+    <Image Include="small.ico" />
+    <Image Include="الانتقال الى الجنب.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\..\..\الشعار\(الكامل).mp4" />
+    <Media Include="..\..\..\..\..\الصوتيات الجاهزه\(اثناء اللعب)...التجربه 16000 هرتز.wav" />
+    <Media Include="..\..\..\..\..\الصوتيات الجاهزه\(قبل اللعب)..الجاهز.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
