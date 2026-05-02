@@ -85,8 +85,8 @@
 
 ## 🔗 روابط المشروع
 
-* 📦 تحميل المشروع: *(ضع الرابط هنا)*
-* 🌐 GitHub Repository: *(ضع الرابط هنا)*
+* 📦 تحميل المشروع:https://github.com/m-a-h-fourdoular/Check-Run-1/releases/download/v1.0/Check.Run.1.exe
+
 
 ---
 
